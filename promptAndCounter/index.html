@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Counter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="mainTitle">
+        <p id ="commentator">Who is gonna win?</p>
+        <h3>Question:</h3>
+        <p id="guestion">The game is simple, you answer and get a point. <br> If you dont answer your opponent gets a point</p>
+        <button onclick="throwGuestion()">Random question</button>
+    </div>
+
+    <div class="gameSection">
+        <div class="sectionHome">
+            <h3>Home</h3>
+            <p class="score" id="score1">0</p>
+            <span class="pointsBtn">
+                <button class="aButton" onclick="homePlusOne()">+1</button>
+                <button class="aButton" onclick="homePlusTwo()">+2</button>
+                <button class="aButton" onclick="homePlusTree()">+3</button>
+            </span>
+        </div>
+        <div class="sectionWinner">
+            <img id="winningArrow" src="/right-arrow.png">
+            <p id="currentStatus">Currently a draw</p>
+            <button id="resetBtn" onclick="resetAll()">Reset now</button>
+        </div>
+        <div class="sectionGuest">
+            <h3>Guest</h3>
+            <p class="score" id="score2">0</p>
+            <span class="pointsBtn">
+                <button class="aButton" onclick="guestPlusOne()">+1</button>
+                <button class="aButton" onclick="guestPlusTwo()">+2</button>
+                <button class="aButton" onclick="guestPlusTree()">+3</button>
+            </span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
